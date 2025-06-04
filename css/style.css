@@ -1,21 +1,49 @@
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f2f5;
-  color: #333;
+body{
+     margin: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: #f0f2f5;
+    color: #333;
 }
-
-header {
-  margin: 0;
-  background-color: rgb(250,255,202);
+header{
+    background-color: rgb(250,255,202);
+    padding-top: 18px;
+    padding-bottom: 18px;
+    box-shadow: 0 7px 8px -3px grey;
+    position: fixed;
+    width: 100%;
+    margin-top: -10px;
+    z-index: 99;
   color: black;
   font-family: arial, sans-serif;
   font-size: 16px;
 }
-
-
-
+.container{
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+.header-section div{
+    position: relative;
+}
+.header-section p{
+    position: absolute;
+    top: -24px;
+    right: -8px;
+    background-color: #fff;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: #0066cc;
+    font-weight: 700;
+    font-family: system-ui;
+    line-height: 18px;
+}
 footer {
   margin: 0;
   background-color: rgb(250,255,202);
@@ -24,60 +52,23 @@ footer {
   font-size: 16px;
   text-align: center;
 }
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 2rem;
-  gap: 1.5rem;
-}
-
-.card {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  width: 300px;
-  padding: 1.5rem;
-  transition: transform 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card h2 {
-  margin-top: 0;
-  font-size: 1.4rem;
-  color: #0066cc;
-}
-
-.card p {
-  margin: 0.5rem 0;
-}
-.avatar {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.logoClass{ 
-  
- display:relative;
+.logo{
+    width: 164px;
+    height: 150px;
+    cursor: pointer;
 }
 .titleApp{
   position: relative;
-  top: -170px;
+  top: 0px;
+  right: 300px;
   text-align: center;
+  color: #0066cc;
 }
 .headNav{
   position: relative;
-  top: -170px;
-  text-align: center;
+  top: 80px;
+  right: 200px;
+  text-align: left;
 }
 .titleAplicativo{
   position: relative;
@@ -88,7 +79,6 @@ footer {
   text-align: center;
   border: 3px solid #73AD21;
 }
-
 .cart{
     width: 39px;
     height: 38px;
@@ -110,3 +100,128 @@ footer {
     transition-duration: .5s;
 }
 /*end header*/
+.products{
+    padding-top: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+
+
+
+.carts{
+   background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+.carts:hover {
+  transform: translateY(-5px);
+}
+.carts h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #0066cc;
+}
+.carts p{
+    margin: 0.5rem 0;
+}
+.carts div p{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: #0066cc;
+    color: #fff;
+    padding: 2px 7px 4px 21px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+.carts div{
+    position: relative;
+}
+.carts a{
+    font-family: system-ui;
+    text-decoration: none;
+    background: #0066cc;
+    padding: 9px 23px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*float cart*/
+.cart-products .item img{
+    width: 115px;
+}
+
+.cart-products .item{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px red;
+}
+.cart-products .item .item-content{
+    margin: 0 19px;
+    width: 201px;
+}
+.cart-products .item .item-content h5{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item .item-content h6{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item span{
+    background-color: red;
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: system-ui;
+    cursor: pointer;
+}
+.cart-products h3{
+    margin-bottom: 0;
+}
+.cart-products .item .item-content h5.cart-price{
+    font-weight: 700;
+}
+
+/*stye to btn close*/
+p.close-btn{
+    top: -4px;
+    right: 6px;
+    cursor: pointer;
+    color: #000;
+}
+p.author {
+    display: flex;
+    justify-content: center;
+    FONT-VARIANT: JIS04;
+    margin-top: 3%;
+    gap: 7px;
+}
+p.author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}
