@@ -45,6 +45,7 @@ header{
     line-height: 18px;
 }
 footer {
+position: relative;
   margin: 0;
   background-color: rgb(250,255,202);
   color: black;
@@ -73,6 +74,8 @@ footer {
 .titleAplicativo{
   position: relative;
   text-align: center;
+  top: 200px;
+  right: 0px;
 }
 .divPedido{
   position: relative;
