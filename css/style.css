@@ -28,13 +28,12 @@ header{
     justify-content: space-between;
     margin: auto;
     align-items: center;
-    position: relative;
 }
 .header-section div{
-    position: relative;
+    display: flex;
 }
 .header-section p{
-    position: absolute;
+    display: flex;
     top: -24px;
     right: -8px;
     background-color: #fff;
