@@ -94,8 +94,11 @@ position: relative;
     padding: 0 18px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     display: none;
-
     min-width: 290px;
+    width: 350px;
+    height: 350px;
+    overflow: auto;
+    border: 1px solid black;
 }
 
 .cart:hover{
@@ -215,6 +218,12 @@ p.close-btn{
     right: 6px;
     cursor: pointer;
     color: #000;
+}
+p.conferma-btn{
+    top: -4px;
+    right: 6px;
+    cursor: pointer;
+    color: #350ea8;
 }
 p.author {
     display: flex;
