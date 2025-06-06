@@ -56,12 +56,14 @@ position: relative;
   font-size: 16px;
   text-align: center;
 }
+
 .logo{
-    display: flex; 
     width: 164px;
-    height: 150px;
+    height: 84px;
     cursor: pointer;
 }
+
+
 .titleApp{
   display: flex;
   text-align: center;
